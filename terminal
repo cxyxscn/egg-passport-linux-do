@@ -1,0 +1,3 @@
+mkdir egg-passport-oauth2
+cd egg-passport-oauth2
+npm init 

@@ -1,0 +1,56 @@
+{
+  "name": "egg-passport-linux-do",
+  "version": "1.0.0",
+  "description": "egg passport linux.do plugin for Egg.js",
+  "eggPlugin": {
+    "name": "passportLinuxDo",
+    "dependencies": ["passport"]
+  },
+  "keywords": [
+    "egg",
+    "egg-plugin",
+    "egg-passport",
+    "egg-passport-linux-do"
+  ],
+  "dependencies": {
+    "passport-oauth2": "^1.6.1"
+  },
+  "devDependencies": {
+    "autod": "^2.7.1",
+    "egg": "^0.12.0",
+    "egg-bin": "^2.2.1",
+    "egg-ci": "^1.1.0",
+    "egg-mock": "^3.0.0",
+    "egg-passport": "^1.0.0",
+    "eslint": "^3.16.0",
+    "eslint-config-egg": "^3.2.0",
+    "supertest": "^3.0.0",
+    "webstorm-disable-index": "^1.1.2"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "npm run clean",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "lib",
+    "config",
+    "app.js"
+  ],
+  "ci": {
+    "version": "6, 7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cxyxscn/egg-passport-linux-do.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cxyxscn/egg-passport-linux-do/issues"
+  },
+  "homepage": "https://github.com/cxyxscn/egg-passport-linux-do#readme",
+  "author": "cxyxscn",
+  "license": "MIT"
+}
