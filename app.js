@@ -1,11 +1,11 @@
 const OAuth2Strategy = require('passport-oauth2').Strategy;
 
 module.exports = app => {
-  const config = app.config.passportOauth2;
-  
+  const config = app.config.passportLinuxDo;
+
   // 确保配置存在
   if (!config.key || !config.secret) {
-    throw new Error('[egg-passport-oauth2] key and secret are required');
+    throw new Error('[egg-passport-linux-do key and secret are required');
   }
 
   // 配置 OAuth2 策略
@@ -28,7 +28,7 @@ module.exports = app => {
       });
 
       const profile = result.data;
-      
+
       const user = {
         provider: 'oauth2',
         id: profile.id,
