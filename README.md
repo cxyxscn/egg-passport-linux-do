@@ -28,7 +28,7 @@ npm i @eggjs/passport-linux-do
 
 ```js
 // {app_root}/config/plugin.js
-exports.passportlinux-do = {
+exports.passportlinuxDo = {
   enable: true,
   package: '@eggjs/passport-linux-do',
 };
@@ -38,7 +38,7 @@ exports.passportlinux-do = {
 
 ```js
 // {app_root}/config/config.default.js
-exports.passportlinux-do = {
+exports.passportlinuxDo = {
 };
 ```
 
@@ -58,6 +58,8 @@ Please open an issue [here](https://github.com/cxyxscn/egg-passport-linux-do/iss
 
 ## Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=eggjs/passport-linux-do)](https://github.com/cxyxscn/egg-passport-linux-do/graphs/contributors)
+<a href="https://github.com/cxyxscn/egg-passport-linux-do/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=cxyxscn/egg-passport-linux-do" />
+</a>
 
-Made with [contributors-img](https://contrib.rocks).
+Made with [contrib.rocks](https://contrib.rocks).
