@@ -30,12 +30,11 @@ module.exports = app => {
       const profile = result.data;
 
       const user = {
-        provider: 'oauth2',
+        provider: 'linuxDo',
         id: profile.id,
         name: profile.name,
-        displayName: profile.display_name,
-        email: profile.email,
-        avatar: profile.avatar,
+        avatarUrl: profile.avatar_url,
+        trustLevel: profile.trust_level:
         accessToken,
         refreshToken,
         profile,
@@ -47,5 +46,5 @@ module.exports = app => {
     }
   });
 
-  app.passport.use('oauth2', strategy);
+  app.passport.use('linuxDo', strategy);
 }; 
